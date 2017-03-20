@@ -1,0 +1,20 @@
+
+compartment_mol 60	 1 complete ca
+compartment_mol 6020 1 complete cam  # 5uM
+compartment_mol	2006 6 complete bK
+
+#compartment_mol 6150 1 nano Ng@cam~cam@Ng		#245uM
+#compartment_mol 4425 1 nano Ng					#3*245uM/5uM*602*0.05
+
+#compartment_mol 14900 1 nano Ng@cam~cam@Ng		#495uM
+#compartment_mol 2980  1 nano Ng				#3*495uM/5uM
+#surface_mol 150 1 pump pump_layer all all
+
+/*
+compartment_mol 17	 1 complete ca
+compartment_mol 1693 1 complete cam  # 5uM
+compartment_mol 564 6 complete bK
+
+compartment_mol 7190 1 nano Ng@cam~cam@Ng
+compartment_mol 2514 1 nano Ng
+*/
