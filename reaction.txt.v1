@@ -128,15 +128,15 @@ define K-camN2C0_on		1020					#204
 define K-camN2C1_on		16150  					#3230.0
 define K-camN2C2_on		131750 #155 uM^-1 s^-1	#26350.0
 
-define K-camN0C0_off	0.00532	
-define K-camN0C1_off	0.00590		
-define K-camN0C2_off	0.00657	
-define K-camN1C0_off	0.00308
-define K-camN1C1_off	0.00330
-define K-camN1C2_off	0.00371
-define K-camN2C0_off	0.00168
-define K-camN2C1_off	0.00190
-define K-camN2C2_off	0.00111
+define K-camN0C0_off	0.005586	
+define K-camN0C1_off	0.006195		
+define K-camN0C2_off	0.0069	
+define K-camN1C0_off	0.003234
+define K-camN1C1_off	0.003465
+define K-camN1C2_off	0.0039
+define K-camN2C0_off	0.001764
+define K-camN2C1_off	0.001995
+define K-camN2C2_off	0.0011625
 
 #----------------------------------------------------------------------------------------------------------------------------
 reaction bK-camN0C0		bK{cam==0,P==0} + cam{N1==0,N2==0,C1==0,C2==0,K==0,Kp==0,Ng==0} -> bK[cam=1]~cam[K=1] 	K-camN0C0_on
@@ -176,15 +176,15 @@ define K-camN2C0_on		1020					#204
 define K-camN2C1_on		16150  					#3230.0
 define K-camN2C2_on		131750 #155 uM^-1 s^-1	#26350.0
 
-define Kp-camN0C0_off	0.00074480	
-define Kp-camN0C1_off	0.00016520	
-define Kp-camN0C2_off	0.00009200
-define Kp-camN1C0_off	0.00008624
-define Kp-camN1C1_off	0.00001848
-define Kp-camN1C2_off	0.00001040
-define Kp-camN2C0_off	0.00002352
-define Kp-camN2C1_off	0.00000532
-define Kp-camN2C2_off	0.00000155
+define Kp-camN0C0_off	0.0001675800011	
+define Kp-camN0C1_off	0.00003717000012	
+define Kp-camN0C2_off	0.0000207
+define Kp-camN1C0_off	0.00001940400013
+define Kp-camN1C1_off	0.000004158000014
+define Kp-camN1C2_off	0.00000234
+define Kp-camN2C0_off	0.000005292000035
+define Kp-camN2C1_off	0.000001197000004
+define Kp-camN2C2_off	0.00000034875
 
 reaction bKp-camN0C0	bK{cam==0,P==1} + cam{N1==0,N2==0,C1==0,C2==0,K==0,Kp==0,Ng==0} -> bK[cam=1]~cam[K=1,Kp=1] Kp-camN0C0_on
 reaction bKp-camN0C1	bK{cam==0,P==1} + cam{N1==0,N2==0,C1==1,C2==0,K==0,Kp==0,Ng==0} -> bK[cam=1]~cam[K=1,Kp=1] Kp-camN0C1_on
@@ -212,7 +212,7 @@ reaction bKp-camN2C2_r	bK{cam==1,P==1}~cam{N1==1,N2==1,C1==1,C2==1,K==1,Kp==1,Ng
 
 #----- bK autophosphorylation-------------------------------------------------------
 # scaled up by 10 times 
-define Kp-camN0C0	0.0001
+#define Kp-camN0C0	0.0000
 define Kp-camN0C1 	0.0005		
 define Kp-camN0C2	0.001		
 define Kp-camN1C0	0.0005
