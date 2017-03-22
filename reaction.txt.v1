@@ -1,5 +1,6 @@
 # revised from reaction_v1.txt.0
 # KpN1_off, KpN2_off, KpC1_off, KpC2_off, autophosphorylation recalculated
+# various dephos_rate
 
 species ca
 species cam
@@ -211,7 +212,7 @@ reaction bKp-camN2C2_r	bK{cam==1,P==1}~cam{N1==1,N2==1,C1==1,C2==1,K==1,Kp==1,Ng
 
 #----- bK autophosphorylation-------------------------------------------------------
 # scaled up by 10 times 
-# define Kp-camN0C0	0
+define Kp-camN0C0	0.0001
 define Kp-camN0C1 	0.0005		
 define Kp-camN0C2	0.001		
 define Kp-camN1C0	0.0005
