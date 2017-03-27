@@ -1,0 +1,4 @@
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x0ac2f798 ***
+./run_test.sh: line 2: 24044 Aborted                 nohup smoldyn-cplx volt_model.txt.10hz > test.tmp.10hz
+*** Error in `smoldyn-cplx': munmap_chunk(): invalid pointer: 0x0a73e870 ***
+./run_test.sh: line 2: 25139 Aborted                 nohup smoldyn-cplx volt_model.txt.10hz > test.tmp.10hz

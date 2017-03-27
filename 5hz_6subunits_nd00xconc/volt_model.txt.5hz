@@ -40,8 +40,7 @@ time_stop  stimtime
 time_step  0.01 #1 usec, step  1.0/4.5/10, 4.5 is the largets off time step 
 
 ifdefine save_on
-	output_files molcount_ca_5hz.txt.n molcount_ca_5hz.txt.c molcount_cam_5hz.txt molcount_bK_5hz.txt molcount_Ng_5hz.txt
-	cmd n 100 molstatecountincmpt complete Ng molcount_Ng_5hz.txt
+	output_files molcount_ca_5hz.txt.n molcount_ca_5hz.txt.c molcount_cam_5hz.txt molcount_bK_5hz.txt
 	cmd n 100 molstatecountincmpt nano ca molcount_ca_5hz.txt.n
 	cmd n 100 molstatecountincmpt cytol ca molcount_ca_5hz.txt.c
 	cmd n 100 molstatecountincmpt complete cam molcount_cam_5hz.txt
@@ -50,7 +49,7 @@ ifdefine save_on
 endif
 
 #-------------Molecules----------------
-read_file reaction.txt
+read_file ../reaction.txt
 
 #------------------Geometry------------
 read_file geometry.txt
@@ -65,7 +64,7 @@ read_file initial.txt
 # single ca channel 0.0936 /usec ~ 0.03 pA, Tardross (2013) used 0.02 or 0.005 pA
 # read_file ../../../Documents/cell_ca_sig/neuron_dat_files/ica_burst_cplx.txt
 
-read_file ../../3cmpts/ca_influx/cainput_5hz16ch/cainput_5hz16ch.txt.0
+read_file ../ca_influx/ca_influx/cainput_5hz16ch/cainput_5hz16ch.txt.0
 multibinding on
 
 ifdefine graph_on
