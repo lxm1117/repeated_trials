@@ -1,9 +1,0 @@
-./run_test.sh: line 2: 16913 Segmentation fault      nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
-*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x09ffa9e0 ***
-./run_test.sh: line 2: 18379 Aborted                 nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
-./run_test.sh: line 2: 19695 Segmentation fault      nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
-*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x0acef988 ***
-./run_test.sh: line 2: 21230 Aborted                 nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
-*** Error in `smoldyn-cplx': double free or corruption (!prev): 0x0adaea10 ***
-./run_test.sh: line 2: 22459 Aborted                 nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
-./run_test.sh: line 2: 23456 Segmentation fault      nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
