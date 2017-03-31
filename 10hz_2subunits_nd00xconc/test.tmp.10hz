@@ -23,9 +23,9 @@ molec:pump, cond:ca==1
 molec:ca, cond:pump==1,cam==0
 rname:pump-ca_out, rxnrate=680137668328715138540351395554958074656378163206101852214618958241231182780238566867039306826551845000930721404265861160501022152298713290464256397844204800095607898767617868505761225512094084846019942832659190522531437426893383532544.000000
 molec_num=2, rct1->states_num=1, i=0
-RxnAdd, entrylist_size=2, molec_num=2, rct1->ident=5, rct1->states[i]=1, rct2->ident=1, rct2->states[j]=2, entry1=31, entry2=5, entry=997, entry_ptr=28589648
-molec:cam, cond:N2==0,N1==0,K==0,Kp==0,Ng==0
-molec: ca, cond:cam==0,pump==0
+RxnAdd, entrylist_size=2, molec_nu*** Error in `smoldyn-cplx': free(): invalid next size (normal): 0x000000000354fac0 ***
+./run_test.sh: line 2:  9778 Aborted                 nohup smoldyn-cplx volt_model.txt.10hz > test.tmp.10hz
+==0
 rname:camN1-ca, rxnrate=161500.000000
 molec_num=2, rct1->states_num=4, i=0
 RxnAdd, entrylist_size=3, molec_num=2, rct1->ident=2, rct1->states[i]=0, rct2->ident=1, rct2->states[j]=0, entry1=6, entry2=2, entry=44, entry_ptr=28589664
@@ -2990,4 +2990,103 @@ rxn:KpcamN1~ca rxnr:KpcamN1~ca_r
 KpcamC2~ca
 rxn:KpcamC2~ca rxnr:KpcamC2~ca_r
 ka_tot=204000.000000 prob_assign=204000.000000 rc3=7.868074
-sim->time=332.920000 rname:camC
+sim->time=332.920000 rname:camC1-ca  mptrA->serno=175
+sim->time=333.330000 rname:camC1-ca_r  mptrA->serno=5708
+sim->time=336.570000 rname:camN1-ca  mptrA->serno=542
+sim->time=342.220000 rname:KcamN2~ca_r  mptrA->serno=3496
+sim->time=344.070000 rname:camC1-ca  mptrA->serno=2326
+sim->time=348.450000 rname:camC1-ca  mptrA->serno=240
+sim->time=350.950000 rname:KcamN2~ca  mptrA->serno=555
+sim->time=351.970000 rname:camN1-ca  mptrA->serno=4136
+sim->time=353.180000 rname:camC1-ca  mptrA->serno=5059
+sim->time=353.850000 rname:camN1-ca  mptrA->serno=3079
+sim->time=358.060000 rname:KcamN1~ca  mptrA->serno=1616
+sim->time=358.140000 rname:KpcamN2~ca  mptrA->serno=2007
+sim->time=367.420000 rname:camC1-ca_r  mptrA->serno=2361
+sim->time=371.470000 rname:camC1-ca  mptrA->serno=4918
+sim->time=375.880000 rname:camN1-ca  mptrA->serno=3277
+sim->time=376.680000 rname:camC1-ca  mptrA->serno=5610
+sim->time=384.190000 rname:camC1-ca_r  mptrA->serno=5011
+sim->time=405.680000 rname:camC2-ca  mptrA->serno=4333
+sim->time=432.810000 rname:KcamN2~ca  mptrA->serno=4628
+sim->time=435.390000 rname:KcamC1~ca  mptrA->serno=2404
+sim->time=441.290000 rname:camN1-ca_r  mptrA->serno=897
+sim->time=449.170000 rname:camC1-ca  mptrA->serno=1068
+sim->time=449.660000 rname:KcamC2~ca  mptrA->serno=1395
+sim->time=449.900000 rname:camN1-ca_r  mptrA->serno=1078
+KpcamN1~ca
+rxn:KpcamN1~ca rxnr:KpcamN1~ca_r
+KpcamC1~ca
+rxn:KpcamC1~ca rxnr:KpcamC1~ca_r
+ka_tot=204000.000000 prob_assign=204000.000000 rc3=7.868074
+sim->time=454.070000 rname:camC1-ca  mptrA->serno=4565
+sim->time=462.850000 rname:camC1-ca  mptrA->serno=523
+sim->time=464.040000 rname:camC1-ca  mptrA->serno=5314
+sim->time=467.030000 rname:camC1-ca  mptrA->serno=3149
+sim->time=467.950000 rname:camC2-ca_r  mptrA->serno=5837
+sim->time=468.410000 rname:camC1-ca_r  mptrA->serno=2699
+sim->time=474.710000 rname:camN2-ca  mptrA->serno=1180
+sim->time=477.850000 rname:camC1-ca  mptrA->serno=746
+sim->time=479.090000 rname:KcamC2~ca  mptrA->serno=5302
+sim->time=483.150000 rname:camN1-ca  mptrA->serno=1542
+sim->time=483.420000 rname:KcamN1~ca  mptrA->serno=3225
+sim->time=483.800000 rname:camN1-ca_r  mptrA->serno=4673
+sim->time=485.000000 rname:camC1-ca  mptrA->serno=4149
+sim->time=494.520000 rname:KcamC2~ca_r  mptrA->serno=1553
+sim->time=509.270000 rname:camC1-ca  mptrA->serno=3704
+sim->time=511.300000 rname:camC1-ca_r  mptrA->serno=1802
+sim->time=530.630000 rname:camN1-ca_r  mptrA->serno=2315
+sim->time=534.830000 rname:camN1-ca  mptrA->serno=4786
+sim->time=536.520000 rname:KcamN1~ca  mptrA->serno=4147
+sim->time=536.810000 rname:camN1-ca_r  mptrA->serno=5062
+sim->time=538.280000 rname:KcamN1~ca_r  mptrA->serno=4943
+sim->time=548.560000 rname:KcamN1~ca  mptrA->serno=4047
+sim->time=554.300000 rname:camN1-ca_r  mptrA->serno=2447
+sim->time=556.340000 rname:camC1-ca_r  mptrA->serno=5593
+sim->time=560.570000 rname:camN1-ca_r  mptrA->serno=582
+sim->time=567.570000 rname:camC1-ca  mptrA->serno=6045
+sim->time=576.750000 rname:camC2-ca  mptrA->serno=2321
+sim->time=576.880000 rname:camN1-ca_r  mptrA->serno=1322
+sim->time=577.510000 rname:camN1-ca_r  mptrA->serno=534
+sim->time=578.780000 rname:camN2-ca  mptrA->serno=4615
+sim->time=581.700000 rname:camC1-ca_r  mptrA->serno=3611
+sim->time=582.700000 rname:camN1-ca  mptrA->serno=5135
+sim->time=585.040000 rname:camC1-ca  mptrA->serno=1080
+sim->time=585.550000 rname:camN1-ca_r  mptrA->serno=3325
+sim->time=590.880000 rname:camC1-ca_r  mptrA->serno=5850
+sim->time=603.380000 rname:KcamN1~ca  mptrA->serno=4920
+sim->time=611.880000 rname:KcamN2~ca_r  mptrA->serno=5958
+sim->time=620.530000 rname:camN1-ca_r  mptrA->serno=2910
+sim->time=632.210000 rname:camN1-ca_r  mptrA->serno=4039
+sim->time=643.230000 rname:camC1-ca  mptrA->serno=4882
+sim->time=682.800000 rname:camN1-ca  mptrA->serno=2881
+sim->time=714.740000 rname:camN1-ca  mptrA->serno=764
+rxn:bK-camN0C0 rxnr:bK-camN0C0_r
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bK-camN0C2 rxnr:bK-camN0C2_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
+rxn:bK-camN0C1 rxnr:bK-camN0C1_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bK-camN1C0 rxnr:bK-camN1C0_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bK-camN1C1 rxnr:bK-camN1C1_r
+rxn:bKp-camN1C1 rxnr:bKp-camN1C1_r
+rxn:bK-camN1C2 rxnr:bK-camN1C2_r
+rxn:bKp-camN1C2 rxnr:bKp-camN1C2_r
+sim->time=846.250000 rname:KcamN1~ca_r  mptrA->serno=5283
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN2C0 rxnr:bKp-camN2C0_r
+rxn:bKp-camN2C2 rxnr:bKp-camN2C2_r
+rxn:bK-camN2C0 rxnr:bK-camN2C0_r
+rxn:bKp-camN2C0 rxnr:bKp-camN2C0_r
+rxn:bKp-camN1C1 rxnr:bKp-camN1C1_r
+rxn:bKp-camN1C2 rxnr:bKp-camN1C2_r
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r

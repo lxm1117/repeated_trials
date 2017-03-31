@@ -23,9 +23,9 @@ molec:pump, cond:ca==1
 molec:ca, cond:pump==1,cam==0
 rname:pump-ca_out, rxnrate=680137668328715138540351395554958074656378163206101852214618958241231182780238566867039306826551845000930721404265861160501022152298713290464256397844204800095607898767617868505761225512094084846019942832659190522531437426893383532544.000000
 molec_num=2, rct1->states_num=1, i=0
-RxnAdd, entrylist_size=2, molec_num=2, rct1->ident=5, rct1->states[i]=1, rct2->ident=1, rct2->states[j]=2, entry1=31, entry2=5, entry=997, entry_ptr=9924176
-molec:cam, cond:N2==0,N1==0,K==0,Kp==0,Ng==0
-molec: ca, cond:cam==0,pump==0
+RxnAdd, entrylist_size=2, m*** Error in `smoldyn-cplx': free(): invalid next size (normal): 0x00000000023b11d0 ***
+./run_test.sh: line 2: 10035 Aborted                 nohup smoldyn-cplx volt_model.txt.5hz > test.tmp.5hz
+==0,pump==0
 rname:camN1-ca, rxnrate=161500.000000
 molec_num=2, rct1->states_num=4, i=0
 RxnAdd, entrylist_size=3, molec_num=2, rct1->ident=2, rct1->states[i]=0, rct2->ident=1, rct2->states[j]=0, entry1=6, entry2=2, entry=44, entry_ptr=9924192
@@ -3240,4 +3240,96 @@ sim->time=532.950000 rname:KcamC2~ca  mptrA->serno=6064
 sim->time=536.330000 rname:camN1-ca_r  mptrA->serno=6059
 sim->time=539.440000 rname:camN1-ca_r  mptrA->serno=3999
 sim->time=548.160000 rname:camC1-ca_r  mptrA->serno=2967
-sim->time=552.070000 rname:KcamC2~ca_r  mptrA->serno=4
+sim->time=552.070000 rname:KcamC2~ca_r  mptrA->serno=4740
+sim->time=552.160000 rname:camN1-ca_r  mptrA->serno=2679
+sim->time=554.600000 rname:camC1-ca mptrA->serno=2235
+sim->time=559.660000 rname:camN1-ca  mptrA->serno=5217
+sim->time=559.970000 rname:camN1-ca_r  mptrA->serno=1961
+sim->time=560.210000 rname:camC1-ca  mptrA->serno=1380
+sim->time=564.850000 rname:camC1-ca  mptrA->serno=1784
+sim->time=573.840000 rname:camC2-ca  mptrA->serno=4042
+sim->time=574.140000 rname:camN1-ca_r  mptrA->serno=1143
+sim->time=575.560000 rname:camC1-ca  mptrA->serno=5142
+sim->time=576.760000 rname:KcamN1~ca  mptrA->serno=1009
+sim->time=586.240000 rname:camN1-ca_r  mptrA->serno=2058
+sim->time=587.970000 rname:camC1-ca_r  mptrA->serno=1567
+sim->time=599.990000 rname:camN1-ca  mptrA->serno=4653
+sim->time=601.070000 rname:camN1-ca_r  mptrA->serno=5182
+sim->time=606.280000 rname:camC1-ca mptrA->serno=2466
+sim->time=607.220000 rname:camC1-ca  mptrA->serno=5622
+sim->time=635.060000 rname:camC1-ca  mptrA->serno=267
+sim->time=641.530000 rname:camN1-ca_r  mptrA->serno=3762
+sim->time=643.810000 rname:camC2-ca_r  mptrA->serno=2331
+sim->time=671.580000 rname:camN1-ca_r  mptrA->serno=112
+sim->time=677.640000 rname:camN1-ca_r  mptrA->serno=4825
+sim->time=679.860000 rname:camN1-ca  mptrA->serno=2976
+sim->time=683.180000 rname:KcamN1~ca  mptrA->serno=3896
+sim->time=743.710000 rname:KcamN1~ca  mptrA->serno=2673
+sim->time=747.200000 rname:camN1-ca_r  mptrA->serno=3728
+sim->time=755.010000 rname:camC1-ca  mptrA->serno=4529
+sim->time=759.990000 rname:camN1-ca  mptrA->serno=77
+sim->time=763.520000 rname:camC1-ca  mptrA->serno=5980
+sim->time=763.850000 rname:camC1-ca  mptrA->serno=4514
+sim->time=765.250000 rname:camC1-ca mptrA->serno=6073
+sim->time=765.680000 rname:camC1-ca  mptrA->serno=3633
+sim->time=773.520000 rname:camN1-ca  mptrA->serno=4010
+sim->time=773.910000 rname:camN1-ca  mptrA->serno=5969
+sim->time=775.770000 rname:camC1-ca  mptrA->serno=3158
+sim->time=777.220000 rname:camC1-ca_r  mptrA->serno=335
+sim->time=784.530000 rname:camC2-ca_r  mptrA->serno=1006
+sim->time=788.050000 rname:camN1-ca  mptrA->serno=1919
+sim->time=788.700000 rname:KcamN1~ca_r  mptrA->serno=1274
+sim->time=794.580000 rname:camC2-ca  mptrA->serno=3640
+sim->time=798.200000 rname:camC1-ca_r  mptrA->serno=5548
+sim->time=805.020000 rname:camN1-ca_r  mptrA->serno=1382
+sim->time=808.500000 rname:camN1-ca  mptrA->serno=3700
+sim->time=810.050000 rname:camN1-ca  mptrA->serno=1570
+sim->time=824.830000 rname:camN1-ca  mptrA->serno=3315
+sim->time=838.860000 rname:camN1-ca  mptrA->serno=3517
+sim->time=839.100000 rname:KcamN1~ca_r  mptrA->serno=4427
+sim->time=864.700000 rname:camC1-ca_r  mptrA->serno=582
+sim->time=866.810000 rname:camC1-ca  mptrA->serno=4705
+sim->time=912.980000 rname:camC1-ca  mptrA->serno=240
+sim->time=920.130000 rname:camC1-ca  mptrA->serno=2371
+sim->time=944.260000 rname:camC2-ca  mptrA->serno=3776
+sim->time=951.010000 rname:camC1-ca  mptrA->serno=1641
+sim->time=962.900000 rname:camC1-ca  mptrA->serno=2405
+sim->time=965.690000 rname:camN2-ca_r  mptrA->serno=2423
+sim->time=972.040000 rname:camC1-ca  mptrA->serno=2721
+sim->time=973.390000 rname:KcamN1~ca  mptrA->serno=4775
+sim->time=979.570000 rname:camC1-ca  mptrA->serno=3421
+sim->time=980.120000 rname:KcamC1~ca  mptrA->serno=5436
+sim->time=988.390000 rname:camN1-ca_r  mptrA->serno=1845
+sim->time=1002.370000 rname:camN1-ca  mptrA->serno=1579
+sim->time=1004.150000 rname:camC1-ca_r  mptrA->serno=1936
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN1C2 rxnr:bKp-camN1C2_r
+rxn:bKp-camN1C1 rxnr:bKp-camN1C1_r
+rxn:bKp-camN2C0 rxnr:bKp-camN2C0_r
+rxn:bK-camN0C1 rxnr:bK-camN0C1_r
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bK-camN0C0 rxnr:bK-camN0C0_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
+rxn:bK-camN0C2 rxnr:bK-camN0C2_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bK-camN1C0 rxnr:bK-camN1C0_r
+sim->time=1218.660000 rname:KcamN1~ca  mptrA->serno=3211
+rxn:bKp-camN1C2 rxnr:bKp-camN1C2_r
+rxn:bK-camN1C2 rxnr:bK-camN1C2_r
+sim->time=1245.150000 rname:KcamN1~ca_r  mptrA->serno=4173
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
+rxn:bKp-camN1C2 rxnr:bKp-camN1C2_r
+rxn:bKp-camN1C1 rxnr:bKp-camN1C1_r
+rxn:bK-camN1C1 rxnr:bK-camN1C1_r
+rxn:bKp-camN1C1 rxnr:bKp-camN1C1_r
+rxn:bKp-camN0C0 rxnr:bKp-camN0C0_r
+rxn:bKp-camN0C1 rxnr:bKp-camN0C1_r
+rxn:bKp-camN1C0 rxnr:bKp-camN1C0_r
+rxn:bKp-camN0C2 rxnr:bKp-camN0C2_r
